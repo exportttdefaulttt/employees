@@ -1,0 +1,344 @@
+// .employee-filter {
+//     padding: 24px;
+
+//     border-radius: 24px;
+
+//     background: var(--surface);
+
+//     backdrop-filter: blur(20px);
+
+//     border: 1px solid var(--border);
+
+//     margin-bottom: 30px;
+// }
+
+// .employee-filter__title {
+//     margin-bottom: 16px;
+
+//     font-size: 1.4rem;
+// }
+
+// /* ===================================
+//    SEARCH
+// =================================== */
+
+// .search-box {
+//     display: flex;
+//     align-items: center;
+
+//     padding-left: 18px;
+
+//     background: rgba(255, 255, 255, 0.03);
+
+//     border: 1px solid var(--border);
+//     border-radius: 18px;
+
+//     transition:
+//         border-color .2s ease,
+//         background .2s ease;
+// }
+
+// .search-box:focus-within {
+//     border-color: var(--primary);
+// }
+
+// .search-icon {
+//     flex-shrink: 0;
+
+//     color: var(--text-secondary);
+// }
+
+// .search-box input {
+//     flex-grow: 1;
+
+//     padding: 16px;
+
+//     background: transparent;
+
+//     border: none;
+//     outline: none;
+
+//     color: var(--text);
+
+//     font-size: 1rem;
+// }
+
+// .search-box input::placeholder {
+//     color: var(--text-secondary);
+// }
+
+// /* ===================================
+//    CLEAR BUTTON
+// =================================== */
+
+// .clear-btn {
+//     width: 42px;
+//     height: 42px;
+
+//     margin-right: 8px;
+
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+
+//     border: none;
+//     border-radius: 12px;
+
+//     background: transparent;
+
+//     color: var(--text-secondary);
+
+//     cursor: pointer;
+
+//     transition:
+//         background .2s ease,
+//         color .2s ease;
+// }
+
+// .clear-btn:hover {
+//     background: rgba(255, 255, 255, 0.05);
+
+//     color: var(--text);
+// }
+
+// /* ===================================
+//    FILTERS
+// =================================== */
+
+// .filters {
+//     display: flex;
+//     flex-wrap: wrap;
+
+//     gap: 12px;
+
+//     margin-top: 20px;
+// }
+
+// .filters button {
+//     padding: 12px 18px;
+
+//     border: 1px solid var(--border);
+//     border-radius: 999px;
+
+//     background: transparent;
+
+//     color: var(--text-secondary);
+
+//     cursor: pointer;
+
+//     transition:
+//         background .2s ease,
+//         border-color .2s ease,
+//         color .2s ease;
+// }
+
+// .filters button:hover {
+//     border-color: var(--primary);
+
+//     color: var(--text);
+// }
+
+// .filters button.active {
+//     background: var(--primary);
+
+//     border-color: var(--primary);
+
+//     color: #fff;
+// }
+
+// /* ===================================
+//    MOBILE
+// =================================== */
+
+// @media (max-width: 600px) {
+//     .employee-filter {
+//         padding: 20px;
+//     }
+
+//     .filters {
+//         gap: 10px;
+//     }
+
+//     .filters button {
+//         width: 100%;
+//     }
+// }
+
+
+
+
+
+
+
+.employee-filter {
+    padding: 24px;
+
+    border-radius: 24px;
+
+        background: var(--surface);
+
+    backdrop-filter: blur(20px);
+
+    border: 1px solid var(--border);
+}
+
+.employee-filter__title {
+    margin-bottom: 16px;
+
+    font-size: 1.4rem;
+}
+
+/* ====================================
+   SEARCH
+==================================== */
+
+.search-box {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 18px;
+
+    border: 1px solid var(--border);
+    border-radius: 18px;
+
+    background: rgba(255, 255, 255, 0.03);
+
+    transition:
+        border-color .2s ease,
+        background-color .2s ease;
+}
+
+.search-box:focus-within {
+    border-color: var(--primary);
+
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.search-icon {
+    flex-shrink: 0;
+
+    color: var(--text-secondary);
+}
+
+.search-box input {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 16px 0;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+
+    color: var(--text);
+
+    font-size: 1rem;
+}
+
+.search-box input::placeholder {
+    color: var(--text-secondary);
+}
+
+/* ====================================
+   CLEAR BUTTON
+==================================== */
+
+.clear-btn {
+    width: 36px;
+    height: 36px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 10px;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        color .2s ease;
+}
+
+.clear-btn:hover {
+    background: rgba(255, 255, 255, 0.08);
+
+    color: var(--text);
+}
+
+/* ====================================
+   FILTERS
+==================================== */
+
+.filters {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.filters button {
+    padding: 12px 18px;
+
+    border: 1px solid var(--border);
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: var(--text-secondary);
+
+    font-size: 0.9rem;
+
+    cursor: pointer;
+
+    transition:
+        background-color .2s ease,
+        border-color .2s ease,
+        color .2s ease;
+}
+
+.filters button:hover {
+    border-color: var(--primary);
+
+    color: var(--text);
+}
+
+.filters button.active {
+    border-color: var(--primary);
+
+    background: var(--primary);
+
+    color: white;
+}
+
+/* ====================================
+   MOBILE
+==================================== */
+
+@media (max-width: 600px) {
+    .employee-filter {
+        padding: 20px;
+    }
+
+    .filters {
+        flex-direction: column;
+    }
+
+    .filters button {
+        width: 100%;
+    }
+}
